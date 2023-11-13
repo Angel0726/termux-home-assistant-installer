@@ -22,6 +22,11 @@ Please be patient, this will take a while depending on your device specification
 - Downgrades `python-numpy` to 1.23.2
 - Installs Home Assistant Core in your `~/hass` directory
 
+> pyyaml报错
+
+> echo "cython<3.0" >> c.txt
+
+> PIP_CONSTRAINT=c.txt pip install pyyaml==6.0
 ## Starting `hass` after installation
 
 1. Start from your home dir: `cd ~`
