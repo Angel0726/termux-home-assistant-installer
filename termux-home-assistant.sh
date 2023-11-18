@@ -86,10 +86,10 @@ do_install() {
 
   cp "$script_dir/etc/apt/apt.conf.d/99-ha-unattended" "$PREFIX/etc/apt/apt.conf.d/99-ha-unattended"
 
-  pkg update $APT_INSTALL_FLAGS
+  apt update $APT_INSTALL_FLAGS
   apt upgrade $APT_INSTALL_FLAGS
 
-  pkg i tsu python nano termux-api make libjpeg-turbo make git rust python-cryptography libcrypt libffi binutils mosquitto wget libsodium python-numpy $APT_INSTALL_FLAGS
+  apt i tsu python nano termux-api make libjpeg-turbo make git rust python-cryptography libcrypt libffi binutils mosquitto wget libsodium python-numpy $APT_INSTALL_FLAGS
 
   dpkg -i ./contrib/ffmpeg_5.1.2-7_aarch64.deb || true
   apt install -f $APT_INSTALL_FLAGS
