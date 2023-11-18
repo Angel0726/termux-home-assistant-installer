@@ -43,6 +43,6 @@ msg "$GREEN Installing now... $NOFORMAT"
 
 sleep 1
 
-pkg i git
+apt i git
 git clone https://github.com/talss89/termux-home-assistant-installer.git
 cd termux-home-assistant-installer && ./termux-home-assistant.sh install
